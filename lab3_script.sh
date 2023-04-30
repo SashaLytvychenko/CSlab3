@@ -7,8 +7,8 @@ for j in "${array[@]}"; do
   for i in {1..3}; do
     a=$(date +%M)
     b=$(date +%S)
-    echo icpc -std=c++17 -O$i $j LAB3.cpp -o result-$a-$b
-    icpc -std=c++17 -O$i $j LAB3.cpp -o result-$a-$b
+    echo icpc -std=c++17 -O$i $j sort.cpp -o result-$a-$b
+    icpc -std=c++17 -O$i $j sort.cpp -o result-$a-$b
     echo "$j $i:"
     time ./result-$a-$b
   done 
